@@ -45,8 +45,8 @@ function q1(arr) {
         result = temp[0];
     }
 
-    console.log("result:", result);
-    return result;
+    console.log("参数:", arr, "\n结果:", result.join(" "), "\n");
+    return result.join(" ");
 
     function _handle(arra, arrb) {
         let result = [];
@@ -77,7 +77,7 @@ function q1(arr) {
     }
 }
 
-q1([2, 35]); //[ 'ad', 'ae', 'af', 'aj', 'ak', 'al', 'bd', 'be', 'bf', 'bj', 'bk', 'bl', 'cd', 'ce', 'cf', 'cj', 'ck', 'cl' ]
-q1([2, 3]); //[ 'ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf' ]
-q1([2, 3, 4]); //[ 'ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf', 'ag', 'ah', 'ai', 'bg', 'bh', 'bi', 'cg', 'ch', 'ci', 'dg', 'dh', 'di', 'eg', 'eh', 'ei', 'fg', 'fh', 'fi' ]
-q1([9]); //[ 'w', 'x', 'y', 'z' ]
+q1([2, 35]); //ad ae af aj ak al bd be bf bj bk bl cd ce cf cj ck cl
+q1([2, 3]); //ad ae af bd be bf cd ce cf
+q1([2, 3, 4]); //ad ae af bd be bf cd ce cf ag ah ai bg bh bi cg ch ci dg dh di eg eh ei fg fh fi 
+q1([9]); //w x y z 
